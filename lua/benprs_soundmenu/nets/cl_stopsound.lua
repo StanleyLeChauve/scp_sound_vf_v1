@@ -1,0 +1,4 @@
+net.Receive("BENPRS:SCPSOUNDVF::STOPSOUND_CL", function()
+    if not IsValid(VAR_SYSTEM_BENSOUNDMENU_PLAYSOUND) then return end
+    VAR_SYSTEM_BENSOUNDMENU_PLAYSOUND:Stop()
+end)
